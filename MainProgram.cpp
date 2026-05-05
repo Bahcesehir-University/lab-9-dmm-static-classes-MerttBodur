@@ -158,6 +158,7 @@ IntArray::IntArray(const IntArray& other) {
         {
             data[i] = other.data[i];
         }
+        Tracker::objectCreated();
 }
 
 // Copy Assignment Operator
