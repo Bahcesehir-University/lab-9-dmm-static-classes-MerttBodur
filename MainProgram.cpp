@@ -201,8 +201,8 @@ bool IntArray::add(int value) {
 int IntArray::get(int index) const {
     // TODO 11: If index is valid (0 <= index < count), return data[index].
     //          Otherwise return -1.
-    if (index < 0 || index > count - 1) return -1;
-        return data[index];
+    if (index >= 0 && index < count) return data[index];
+        return -1;
 }
 
 // Size
